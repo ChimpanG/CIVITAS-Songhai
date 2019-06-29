@@ -5,9 +5,9 @@ XLP cook starting...
 Opened output file: D:\Documents\my games\Sid Meier's Civilization VI\Mods\Mods\CIVITAS Sonni Ali\Platforms\MacOS\BLPs/LeaderFallback.blp    For XLP: '\\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Sonni Ali\XLPs\LeaderFallback.xlp'
 Could not load digest key: ''.  Using mod key to sign BLP.
 Starting 'LeaderFallback'
-Load finished for: 'LeaderFallback' in 0.002 seconds
+Load finished for: 'LeaderFallback' in 0.003 seconds
 Cook finished for: 'LeaderFallback' in 0.000 seconds
-Disk write finished for: 'LeaderFallback' in 0.059 seconds
+Disk write finished for: 'LeaderFallback' in 0.093 seconds
 Cleanup finished for: 'LeaderFallback' in 0.000 seconds
 XLP cook completed with success.
-Cook completed in 0.087 seconds
+Cook completed in 0.129 seconds

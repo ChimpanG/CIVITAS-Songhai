@@ -22,17 +22,17 @@ VALUES
 	("en_US", "LOC_TRAIT_CIVILIZATION_CVS_SONGHAI_UA_DESCRIPTION",	
 	"Rivers provide minor adjacency bonuses to specialty districts and double healing to adjacent units. [ICON_TRADEROUTE] Trade Routes yield +1 [ICON_SCIENCE] Science for each [ICON_TRADINGPOST] Trading Post they pass through."	),
 	
-	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_CAMPUS",			"+{1_num} [ICON_SCIENCE] Science from the adjacent {1_Num : plural 1?river; other?river tiles;}."		),
-	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_THEATER",			"+{1_num} [ICON_CULTURE] Culture from the adjacent {1_Num : plural 1?river; other?river tiles;}."		),
-	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_HOLY_SITE",			"+{1_num} [ICON_FAITH] Faith from the adjacent {1_Num : plural 1?river; other?river tiles;}."		),
-	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_COMMERCIAL_HUB",	"+{1_num} [ICON_GOLD] Gold from the adjacent {1_Num : plural 1?river; other?river tiles;}."		),
+	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_CAMPUS",			"+{1_num} [ICON_SCIENCE] Science from the adjacent {1_Num : plural 1?river; other?river tiles;}."			),
+	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_THEATER",			"+{1_num} [ICON_CULTURE] Culture from the adjacent {1_Num : plural 1?river; other?river tiles;}."			),
+	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_HOLY_SITE",			"+{1_num} [ICON_FAITH] Faith from the adjacent {1_Num : plural 1?river; other?river tiles;}."				),
+	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_COMMERCIAL_HUB",	"+{1_num} [ICON_GOLD] Gold from the adjacent {1_Num : plural 1?river; other?river tiles;}."					),
 	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_INDUSTRIAL_ZONE",	"+{1_num} [ICON_PRODUCTION] Production from the adjacent {1_Num : plural 1?river; other?river tiles;}."		),
 
 -----------------------------------------------
 -- UI
 -----------------------------------------------
 
-	("en_US", "LOC_BUILDING_CVS_SONGHAI_UI_NAME",		"Masjid"	),
+	("en_US", "LOC_BUILDING_CVS_SONGHAI_UI_NAME",		"Jiiray"	),
 	("en_US", "LOC_BUILDING_CVS_SONGHAI_UI_DESCRIPTION",		
 	"A University replacement unique to Songhai. Provides +1 [ICON_GREATWRITER] Great Writer points and +2 Slots for Great Works of [ICON_GREATWORK_WRITING] Writing. Great Works of [ICON_GREATWORK_WRITING] Writing in this city yield +2 [ICON_SCIENCE] Science."	),
 	
@@ -40,7 +40,7 @@ VALUES
 -- UU
 -----------------------------------------------
 
-	("en_US", "LOC_UNIT_CVS_SONGHAI_UU_NAME",		"Kélé-Kun-Tigui"	),
+	("en_US", "LOC_UNIT_CVS_SONGHAI_UU_NAME",		"Bari Koy"	),
 	("en_US", "LOC_UNIT_CVS_SONGHAI_UU_DESCRIPTION",		  
 	"A heavy cavalry unit unique to Songhai. Replaces Knight. Ignores [ICON_MOVEMENT] Movement and [ICON_STRENGTH] Combat Strength penalties across rivers. Deals full damage to city walls."	),
 
@@ -164,10 +164,10 @@ VALUES
 	"The situation, which continued to worsen under Muḥammad Bani, culminated disastrously for Songhai under Issihak II when Moroccan forces, using firearms, advanced into the Songhai empire to rout his forces, first at Tondibi and then at Timbuktu and Gao. Retaliatory guerrilla action of the pastoral Songhai failed to restore the empire, the economic and administrative centres of which remained in Moroccan hands."),		
 	
 	("en_US", "LOC_PEDIA_BUILDINGS_PAGE_BUILDING_CVS_SONGHAI_UI_CHAPTER_HISTORY_PARA_1",	
-	"After the repressive policies of Sonni Ali against the scholars of the Sankore region, a revival of Islamic scholarship under Askiya the Great took place and Songhai cities became thriving centers of learning and commerce. Masajid, meaning 'mosques', contained libraries and larger cities like Timbuktu and Jenne were hotbeds for scholars, theologians, doctors and Mulsim jurists to study at universities, all maintained at the king's cost. Thus the most important trade in these cities was in books and manuscripts that sold for more money than any other merchandise."	),
+	"After the repressive policies of Sonni Ali against the scholars of the Sankore region, a revival of Islamic scholarship under Askiya the Great took place and Songhai cities became thriving centers of learning and commerce. Jiiray, meaning 'mosque', contained libraries and larger cities like Timbuktu and Jenne were hotbeds for scholars, theologians, doctors and Muslim jurists to study at universities, all maintained at the king's cost. Thus the most important trade in these cities was in books and manuscripts that sold for more money than any other merchandise."	),
 
 	("en_US", "LOC_PEDIA_UNITS_PAGE_UNIT_CVS_SONGHAI_UU_CHAPTER_HISTORY_PARA_1",  	
-	"Like their northern counterparts, Songhai armies also contained heavy cavalry units, similar in form and function to European knights. Cavalry units called Mandekalu served as an equal, if not more important element of Songhai's armies. Like the Europeans, these horses were from the upper reaches of society, possessing the best arms, and armor, and only nobles would take them into battle. A Mandinka cavalry unit was composed of 50 horseman called a Seré commanded by a Kélé-Kun-Tigui. Kélé-Kun-Tiguis were professional soldiers and the highest rank on the field short of the Farin or Sankar. "),
+	"Like their northern counterparts, Songhai armies also contained heavy cavalry units, similar in form and function to European knights. Like the Europeans, horses were from the upper reaches of society, possessing the best arms, and armor, and only nobles would take them into battle. Owners of these horses, would form the cavalry of the 'War Arm', and were known as the Bari Koy - or 'masters of the horse'."),
 
 -----------------------------------------------
 -- Mod Support | Rule with Faith
