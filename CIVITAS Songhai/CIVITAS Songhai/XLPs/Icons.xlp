@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>4</major>
+		<minor>0</minor>
+		<build>415</build>
+		<revision>990</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="UI/Icons"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_ICON_22"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_ICON_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_ICON_256"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_ICON_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_ICON_32"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_ICON_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_ICON_80"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_ICON_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_200"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_200"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_256"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_38"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_50"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_70"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_70"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_95"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UU_PORTRAIT_95"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_UniqueUnit_CVS_Mandekalu"/>
+			<m_ObjectName text="Moment_UniqueUnit_CVS_Mandekalu"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_Infrastructure_CVS_Karambungo"/>
+			<m_ObjectName text="Moment_Infrastructure_CVS_Karambungo"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_Infrastructure_CVS_Kuburoo"/>
+			<m_ObjectName text="Moment_Infrastructure_CVS_Kuburoo"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UI_ICON_128"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UI_ICON_128"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UI_ICON_256"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UI_ICON_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UI_ICON_32"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UI_ICON_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UI_ICON_38"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UI_ICON_38"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UI_ICON_50"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UI_ICON_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_UI_ICON_80"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_UI_ICON_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_22"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_22"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_256"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_30"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_30"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_36"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_36"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_44"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_44"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_45"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_48"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_50"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_64"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="CIVILIZATION_CVS_SONGHAI_ICON_80"/>
+			<m_ObjectName text="CIVILIZATION_CVS_SONGHAI_ICON_80"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>LINUX</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Name>CIVITAS [ICON_GOVERNMENT] Songhai</Name>
+    <Guid>5617c3dd-0026-41f8-8f91-75178c3f9a15</Guid>
+    <ProjectGuid>951e2cba-3e2c-4801-8e50-6b28ed244f37</ProjectGuid>
+    <ModVersion>1</ModVersion>
+    <Teaser>Adds the Songhai as a new civilization.</Teaser>
+    <Description>Adds the Songhai as a new civilization.</Description>
+    <Authors>ChimpanG</Authors>
+    <SpecialThanks>
+    </SpecialThanks>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsHotSeat>true</SupportsHotSeat>
+    <AssemblyName>CIVITAS Songhai</AssemblyName>
+    <RootNamespace>CIVITAS Songhai</RootNamespace>
+    <FrontEndActionData><![CDATA[<FrontEndActions><UpdateText id="Songhai_Setup_Text"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Songhai_Localisation.sql</File></UpdateText><UpdateIcons id="Songhai_Setup_Icons"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Songhai_Icons.sql</File></UpdateIcons><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateColors id="Songhai_Setup_Colors"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Songhai_Colors.sql</File></UpdateColors></FrontEndActions>]]></FrontEndActionData>
+    <InGameActionData><![CDATA[<InGameActions><UpdateDatabase id="Songhai_DB"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Songhai_Civilization.sql</File><File>Core/Songhai_UA.sql</File><File>Core/Songhai_UI.sql</File><File>Core/Songhai_UU.sql</File><File>Core/Songhai_ModSupport.sql</File></UpdateDatabase><UpdateText id="Songhai_Text"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Songhai_Localisation.sql</File></UpdateText><UpdateIcons id="Songhai_Icons"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Songhai_Icons.sql</File></UpdateIcons><UpdateArt id="ArtDep"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateColors id="Songhai_Colors"><Properties><LoadOrder>100</LoadOrder></Properties><File>Core/Songhai_Colors.sql</File></UpdateColors></InGameActions>]]></InGameActionData>
+    <AssociationData><![CDATA[<Associations>
+  <Dependency type="Dlc" title="Expansion: Gathering Storm" id="4873eb62-8ccc-4574-b784-dda455e74e68" />
+</Associations>]]></AssociationData>
+    <ActionCriteriaData><![CDATA[<ActionCriteria><Criteria id="XP1" any="1"><GameCoreInUse>Expansion1,Expansion2</GameCoreInUse></Criteria><Criteria id="XP2"><GameCoreInUse>Expansion2</GameCoreInUse></Criteria></ActionCriteria>]]></ActionCriteriaData>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Mod.Art.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Core\Songhai_Civilization.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Songhai_Colors.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Songhai_Icons.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Songhai_Localisation.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Songhai_ModSupport.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Songhai_UA.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Songhai_UI.sql">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Core\Songhai_UU.sql">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)Civ6.targets" />
+</Project>
