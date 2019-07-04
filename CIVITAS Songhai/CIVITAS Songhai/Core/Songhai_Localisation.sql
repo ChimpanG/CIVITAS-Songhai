@@ -49,6 +49,7 @@ VALUES
 -----------------------------------------------
 
 	("en_US",	"LOC_NAMED_DESERT_AZWAGH",		"Azawagh Desert"	),
+	("en_US",	"LOC_NAMED_DESERT_TENERE",		"Tenere Desert"		),
 
 -----------------------------------------------
 -- Mountains

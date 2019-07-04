@@ -24,8 +24,9 @@ VALUES	('CIVILIZATION_CVS_SONGHAI',	'LOC_CIVILIZATION_CVS_SONGHAI_NAME',	'LOC_CI
 -----------------------------------------------
 
 REPLACE INTO NamedDeserts
-		(NamedDesertType,		Name							)
-VALUES	('NAMED_DESERT_AZWAGH',	'LOC_NAMED_DESERT_AZWAGH'		);
+		(NamedDesertType,		Name						)
+VALUES	('NAMED_DESERT_AZWAGH',	'LOC_NAMED_DESERT_AZWAGH'	),
+		('NAMED_DESERT_TENERE',	'LOC_NAMED_DESERT_TENERE'	);
 
 -----------------------------------------------
 -- NamedDesertCivilizations

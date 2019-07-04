@@ -5,9 +5,9 @@ XLP cook starting...
 Opened output file: D:\Documents\my games\Sid Meier's Civilization VI\Mods\Mods\CIVITAS Songhai\Platforms\MacOS\BLPs/units/units.blp    For XLP: '\\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Songhai\XLPs\Units.xlp'
 Could not load digest key: ''.  Using mod key to sign BLP.
 Starting 'units/units'
-Load finished for: 'units/units' in 3.999 seconds
+Load finished for: 'units/units' in 2.409 seconds
 Cook finished for: 'units/units' in 0.002 seconds
-Disk write finished for: 'units/units' in 0.251 seconds
+Disk write finished for: 'units/units' in 0.160 seconds
 Cleanup finished for: 'units/units' in 0.005 seconds
 XLP cook completed with success.
-Cook completed in 4.764 seconds
+Cook completed in 2.659 seconds
