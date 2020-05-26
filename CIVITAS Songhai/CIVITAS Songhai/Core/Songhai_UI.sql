@@ -154,10 +154,10 @@ VALUES	('MODIFIER_CVS_SONGHAI_UA_GW_SCIENCE',	'MODTYPE_CVS_SONGHAI_UI_GW_YIELD',
 -----------------------------------------------
 
 INSERT INTO	ModifierArguments
-		(ModifierId,								Name,					Value						)
-VALUES	('MODIFIER_CVS_SONGHAI_UA_GW_SCIENCE',		'GreatWorkObjectType',	'GREATWORKOBJECT_WRITING'	),
-		('MODIFIER_CVS_SONGHAI_UA_GW_SCIENCE',		'YieldType',			'YIELD_SCIENCE'				),
-		('MODIFIER_CVS_SONGHAI_UA_GW_SCIENCE',		'YieldChange',			2							);
+		(ModifierId,							Name,					Value						)
+VALUES	('MODIFIER_CVS_SONGHAI_UA_GW_SCIENCE',	'GreatWorkObjectType',	'GREATWORKOBJECT_WRITING'	),
+		('MODIFIER_CVS_SONGHAI_UA_GW_SCIENCE',	'YieldType',			'YIELD_SCIENCE'				),
+		('MODIFIER_CVS_SONGHAI_UA_GW_SCIENCE',	'YieldChange',			2							);
 
 -----------------------------------------------
 -- MomentIllustrations

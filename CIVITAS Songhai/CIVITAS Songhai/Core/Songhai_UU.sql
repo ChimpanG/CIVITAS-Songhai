@@ -8,12 +8,11 @@
 -----------------------------------------------	
 	
 INSERT INTO Types
-		(Type,										Kind				)
-VALUES	('TRAIT_CIVILIZATION_CVS_SONGHAI_UU',		'KIND_TRAIT'		),
-		('UNIT_CVS_SONGHAI_UU',						'KIND_UNIT'			),
-		('ABILITY_CVS_SONGHAI_UU',					'KIND_ABILITY'		),
-		('MODTYPE_CVS_SONGHAI_UU_IGNORE_RIVERS',	'KIND_MODIFIER'		),
-		('MODTYPE_CVS_SONGHAI_UU_WALL_DAMAGE',		'KIND_MODIFIER'		);
+		(Type,										Kind			)
+VALUES	('TRAIT_CIVILIZATION_CVS_SONGHAI_UU',		'KIND_TRAIT'	),
+		('UNIT_CVS_SONGHAI_UU',						'KIND_UNIT'		),
+		('ABILITY_CVS_SONGHAI_UU',					'KIND_ABILITY'	),
+		('MODTYPE_CVS_SONGHAI_UU_IGNORE_RIVERS',	'KIND_MODIFIER'	);
 
 -----------------------------------------------
 -- Tags
@@ -35,7 +34,7 @@ VALUES	('UNIT_CVS_SONGHAI_UU',		'CLASS_CVS_SONGHAI_UU'	),
 INSERT INTO TypeTags (Type,		Tag)
 SELECT 	'UNIT_CVS_SONGHAI_UU',	Tag
 FROM 	TypeTags
-WHERE 	Type = 'UNIT_KNIGHT';
+WHERE 	Type = 'UNIT_COURSER';
 
 -----------------------------------------------
 -- Traits
@@ -85,7 +84,7 @@ SELECT	'UNIT_CVS_SONGHAI_UU',	-- UnitType
 		Cost,
 		PurchaseYield,
 		AdvisorType,
-		Combat,
+		Combat + 5, -- Combat
 		BaseSightRange,
 		ZoneOfControl,
 		Domain,
@@ -96,7 +95,7 @@ SELECT	'UNIT_CVS_SONGHAI_UU',	-- UnitType
 		PrereqTech,
 		PrereqCivic
 FROM	Units
-WHERE	UnitType = 'UNIT_KNIGHT';
+WHERE	UnitType = 'UNIT_COURSER';
 
 -----------------------------------------------
 -- Units_XP2
@@ -107,7 +106,7 @@ SELECT	'UNIT_CVS_SONGHAI_UU',
 		ResourceMaintenanceAmount,
 		ResourceCost
 FROM	Units_XP2
-WHERE	UnitType = 'UNIT_KNIGHT';
+WHERE	UnitType = 'UNIT_COURSER';
 
 -----------------------------------------------
 -- UnitUpgrades
@@ -116,7 +115,7 @@ WHERE	UnitType = 'UNIT_KNIGHT';
 INSERT INTO UnitUpgrades (Unit,	UpgradeUnit)
 SELECT 	'UNIT_CVS_SONGHAI_UU',	UpgradeUnit
 FROM 	UnitUpgrades
-WHERE	Unit = 'UNIT_KNIGHT';
+WHERE	Unit = 'UNIT_COURSER';
 
 -----------------------------------------------
 -- UnitAiInfos
@@ -125,7 +124,7 @@ WHERE	Unit = 'UNIT_KNIGHT';
 INSERT INTO UnitAiInfos (UnitType,	AiType)
 SELECT 	'UNIT_CVS_SONGHAI_UU',		AiType
 FROM 	UnitAiInfos
-WHERE 	UnitType = 'UNIT_KNIGHT';
+WHERE 	UnitType = 'UNIT_COURSER';
 		
 -----------------------------------------------
 -- UnitReplaces
@@ -133,7 +132,7 @@ WHERE 	UnitType = 'UNIT_KNIGHT';
 		
 INSERT INTO UnitReplaces
 		(CivUniqueUnitType,		ReplacesUnitType	)
-VALUES	('UNIT_CVS_SONGHAI_UU',	'UNIT_KNIGHT'		);
+VALUES	('UNIT_CVS_SONGHAI_UU',	'UNIT_COURSER'		);
 
 -----------------------------------------------
 -- UnitAbilities
@@ -149,17 +148,15 @@ VALUES	('ABILITY_CVS_SONGHAI_UU',	'LOC_ABILITY_CVS_SONGHAI_UU_NAME',	'LOC_ABILIT
 		
 INSERT INTO UnitAbilityModifiers
 		(UnitAbilityType,			ModifierId								)
-VALUES	('ABILITY_CVS_SONGHAI_UU',	'MODIFIER_CVS_SONGHAI_UU_IGNORE_RIVERS'	),
-		('ABILITY_CVS_SONGHAI_UU',	'MODIFIER_CVS_SONGHAI_UU_WALL_DAMAGE'	);
+VALUES	('ABILITY_CVS_SONGHAI_UU',	'MODIFIER_CVS_SONGHAI_UU_IGNORE_RIVERS'	);
 
 -----------------------------------------------
 -- DynamicModifiers
 -----------------------------------------------
 
 INSERT INTO	DynamicModifiers
-		(ModifierType,								CollectionType,		EffectType								)
-VALUES	('MODTYPE_CVS_SONGHAI_UU_IGNORE_RIVERS',	'COLLECTION_OWNER',	'EFFECT_ADJUST_UNIT_IGNORE_RIVERS'		),
-		('MODTYPE_CVS_SONGHAI_UU_WALL_DAMAGE',		'COLLECTION_OWNER',	'EFFECT_ADJUST_UNIT_ENABLE_WALL_ATTACK'	);
+		(ModifierType,								CollectionType,		EffectType							)
+VALUES	('MODTYPE_CVS_SONGHAI_UU_IGNORE_RIVERS',	'COLLECTION_OWNER',	'EFFECT_ADJUST_UNIT_IGNORE_RIVERS'	);
 
 -----------------------------------------------
 -- Modifiers
@@ -167,8 +164,7 @@ VALUES	('MODTYPE_CVS_SONGHAI_UU_IGNORE_RIVERS',	'COLLECTION_OWNER',	'EFFECT_ADJU
 
 INSERT INTO	Modifiers
 		(ModifierId,								ModifierType,							SubjectRequirementSetId	)
-VALUES	('MODIFIER_CVS_SONGHAI_UU_IGNORE_RIVERS',	'MODTYPE_CVS_SONGHAI_UU_IGNORE_RIVERS',	NULL					),
-		('MODIFIER_CVS_SONGHAI_UU_WALL_DAMAGE',		'MODTYPE_CVS_SONGHAI_UU_WALL_DAMAGE',	NULL					);
+VALUES	('MODIFIER_CVS_SONGHAI_UU_IGNORE_RIVERS',	'MODTYPE_CVS_SONGHAI_UU_IGNORE_RIVERS',	NULL					);
 
 -----------------------------------------------
 -- ModifierArguments
@@ -176,8 +172,7 @@ VALUES	('MODIFIER_CVS_SONGHAI_UU_IGNORE_RIVERS',	'MODTYPE_CVS_SONGHAI_UU_IGNORE_
 
 INSERT INTO	ModifierArguments		
 		(ModifierId,								Name,		Value	)
-VALUES	('MODIFIER_CVS_SONGHAI_UU_IGNORE_RIVERS',	'Ignore',	1		),
-		('MODIFIER_CVS_SONGHAI_UU_WALL_DAMAGE',		'Enable',	1		);
+VALUES	('MODIFIER_CVS_SONGHAI_UU_IGNORE_RIVERS',	'Ignore',	1		);
 
 -----------------------------------------------
 -- MomentIllustrations

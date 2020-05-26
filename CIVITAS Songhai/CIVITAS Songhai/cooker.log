@@ -1,13 +1,25 @@
 Starting AssetCooker...
-OPENCL ACCELERATION IS NOT AVAILABLE!  Your cooks will be SLOOOOWWW!  Please inform an engineer.
+Argument '--shaders' has been deprecated and is no longer used.
 XLP cook starting...
-\\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Songhai\XLPs\Units.xlp
-Opened output file: D:\Documents\my games\Sid Meier's Civilization VI\Mods\Mods\CIVITAS Songhai\Platforms\MacOS\BLPs/units/units.blp    For XLP: '\\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Songhai\XLPs\Units.xlp'
+Z:\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Songhai\XLPs\Units.xlp
+Opened output file: D:\Documents\My Games\Sid Meier's Civilization VI\Mods\CIVITAS Songhai\Platforms\MacOS\BLPs/units/units.blp    For XLP: 'Z:\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Songhai\XLPs\Units.xlp'
 Could not load digest key: ''.  Using mod key to sign BLP.
 Starting 'units/units'
-Load finished for: 'units/units' in 2.409 seconds
-Cook finished for: 'units/units' in 0.002 seconds
-Disk write finished for: 'units/units' in 0.160 seconds
-Cleanup finished for: 'units/units' in 0.005 seconds
+
+****** Log from Geometry: 'Saka_HorseArcher_ArmorA' ********
+--------------
+Geo Saka_HorseArcher_ArmorA Mesh Saka_HorseArcher_Armor_LOD1Shape : 66 vertices removed by tangent merger.
+
+****** Log from Geometry: 'Infantry_Helm_MiddleEastern_A' ********
+--------------
+Geo Infantry_Helm_MiddleEastern_A Mesh Infantry_Helm_MiddleEastern_AShape : 203 vertices removed by tangent merger.
+
+****** Log from Geometry: 'Knight_Asian_HorseArmor_A' ********
+--------------
+Geo Knight_Asian_HorseArmor_A Mesh Knight_Asian_HorseArmor_AShape : 1526 vertices removed by tangent merger.
+Load finished for: 'units/units' in 3.432 seconds
+Cook finished for: 'units/units' in 0.005 seconds
+Disk write finished for: 'units/units' in 0.293 seconds
+Cleanup finished for: 'units/units' in 0.015 seconds
 XLP cook completed with success.
-Cook completed in 2.659 seconds
+Cook completed in 3.832 seconds

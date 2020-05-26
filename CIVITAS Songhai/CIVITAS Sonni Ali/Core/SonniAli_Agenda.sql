@@ -90,7 +90,7 @@ VALUES	('AGENDA_MODIFIER_CVS_SONNI_ALI_UNHAPPY',	'InitialValue',					-1									
 		('AGENDA_MODIFIER_CVS_SONNI_ALI_UNHAPPY',	'StatementKey',					'LOC_DIPLO_WARNING_LEADER_CVS_SONNI_ALI_REASON_ANY'	),
 		('AGENDA_MODIFIER_CVS_SONNI_ALI_UNHAPPY',	'SimpleModifierDescription',	'LOC_DIPLO_MODIFIER_CVS_SONNI_ALI_UNHAPPY'			),
 	
-		('AGENDA_MODIFIER_CVS_SONNI_ALI_HAPPY',		'InitialValue',					7													),
+		('AGENDA_MODIFIER_CVS_SONNI_ALI_HAPPY',		'InitialValue',					5													),
 		('AGENDA_MODIFIER_CVS_SONNI_ALI_HAPPY',		'IncrementTurns',				10													),
 		('AGENDA_MODIFIER_CVS_SONNI_ALI_HAPPY',		'IncrementValue',				1													),
 		('AGENDA_MODIFIER_CVS_SONNI_ALI_HAPPY',		'MaxValue',						12													),

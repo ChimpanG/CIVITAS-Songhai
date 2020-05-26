@@ -9,10 +9,15 @@
 
 CREATE VIEW IF NOT EXISTS vAskiyaUA AS
 SELECT DISTINCT
-        SUBSTR(a.DistrictType, 10)||'_'||SUBSTR(b.BeliefType, 8)||'_'||SUBSTR(a.YieldType, 7) AS Reference, b.BeliefType, a.DistrictType, a.YieldType, a.YieldChangeAsDomesticDestination AS Domestic
+        SUBSTR(a.DistrictType, 10)||'_'||SUBSTR(b.BeliefType, 8)||'_'||SUBSTR(a.YieldType,
+		7) AS Reference,
+		b.BeliefType,
+		a.DistrictType,
+		a.YieldType,
+		a.YieldChangeAsDomesticDestination AS Domestic,
+		a.YieldChangeAsInternationalDestination AS International
 FROM    District_TradeRouteYields AS a, Beliefs AS b
 WHERE   b.BeliefClassType = 'BELIEF_CLASS_FOLLOWER'
-AND     a.YieldChangeAsDomesticDestination > 0
 AND     DistrictType IN (SELECT DistrictType FROM Districts WHERE TraitType IS NULL AND DistrictType NOT IN ('DISTRICT_CITY_CENTER'));
 
 -----------------------------------------------
@@ -48,8 +53,16 @@ VALUES	('LEADER_CVS_ASKIYA',	'TRAIT_LEADER_CVS_ASKIYA_UA'	);
 INSERT INTO	BeliefModifiers (BeliefType, ModifierId)
 SELECT DISTINCT
 		BeliefType,
-		'MODIFIER_CVS_ASKIYA_UA_ATTACH_'||Reference
-FROM	vAskiyaUA;
+		'MODIFIER_CVS_ASKIYA_UA_ATTACH_'||Reference||'_FOUNDED'
+FROM	vAskiyaUA
+WHERE	Domestic > 0;
+
+INSERT INTO	BeliefModifiers (BeliefType, ModifierId)
+SELECT DISTINCT
+		BeliefType,
+		'MODIFIER_CVS_ASKIYA_UA_ATTACH_'||Reference||'_CONQUERED'
+FROM	vAskiyaUA
+WHERE	International > 0;
 
 -----------------------------------------------
 -- DynamicModifiers
@@ -66,19 +79,39 @@ VALUES	('MODTYPE_CVS_ASKIYA_UA_ATTACH_CITIES',		'COLLECTION_ALL_CITIES',	'EFFECT
 
 INSERT INTO	Modifiers (ModifierId, ModifierType, OwnerRequirementSetId, SubjectRequirementSetId)
 SELECT DISTINCT
-		'MODIFIER_CVS_ASKIYA_UA_ATTACH_'||Reference,
+		'MODIFIER_CVS_ASKIYA_UA_ATTACH_'||Reference||'_FOUNDED',
 		'MODTYPE_CVS_ASKIYA_UA_ATTACH_CITIES',
 		NULL,
-		'REQSET_CVS_ASKIYA_UA_CITY_HAS_'||DistrictType
-FROM	vAskiyaUA;
+		'REQSET_CVS_ASKIYA_UA_FOUNDED_CITY_HAS_'||DistrictType
+FROM	vAskiyaUA
+WHERE	Domestic > 0;
 
 INSERT INTO	Modifiers (ModifierId, ModifierType, OwnerRequirementSetId, SubjectRequirementSetId)
 SELECT DISTINCT
-		'MODIFIER_CVS_ASKIYA_UA_'||Reference,
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_FOUNDED',
 		'MODTYPE_CVS_ASKIYA_UA_TRADE_TO_OTHERS',
 		NULL,
 		'REQSET_CVS_ASKIYA_UA_IS_FOUNDER_'||BeliefType
-FROM	vAskiyaUA;
+FROM	vAskiyaUA
+WHERE	Domestic > 0;
+
+INSERT INTO	Modifiers (ModifierId, ModifierType, OwnerRequirementSetId, SubjectRequirementSetId)
+SELECT DISTINCT
+		'MODIFIER_CVS_ASKIYA_UA_ATTACH_'||Reference||'_CONQUERED',
+		'MODTYPE_CVS_ASKIYA_UA_ATTACH_CITIES',
+		NULL,
+		'REQSET_CVS_ASKIYA_UA_CONQUERED_CITY_HAS_'||DistrictType
+FROM	vAskiyaUA
+WHERE	International > 0;
+
+INSERT INTO	Modifiers (ModifierId, ModifierType, OwnerRequirementSetId, SubjectRequirementSetId)
+SELECT DISTINCT
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_CONQUERED',
+		'MODTYPE_CVS_ASKIYA_UA_TRADE_TO_OTHERS',
+		NULL,
+		'REQSET_CVS_ASKIYA_UA_IS_FOUNDER_'||BeliefType
+FROM	vAskiyaUA
+WHERE	International > 0;
 
 -----------------------------------------------
 -- ModifierArguments
@@ -86,31 +119,67 @@ FROM	vAskiyaUA;
 
 INSERT INTO	ModifierArguments (ModifierId, Name, Value)
 SELECT DISTINCT
-		'MODIFIER_CVS_ASKIYA_UA_ATTACH_'||Reference,
+		'MODIFIER_CVS_ASKIYA_UA_ATTACH_'||Reference||'_FOUNDED',
 		'ModifierId',
-		'MODIFIER_CVS_ASKIYA_UA_'||Reference
-FROM	vAskiyaUA;
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_FOUNDED'
+FROM	vAskiyaUA
+WHERE	Domestic > 0;
 
 INSERT INTO	ModifierArguments (ModifierId, Name, Value)
 SELECT DISTINCT
-		'MODIFIER_CVS_ASKIYA_UA_'||Reference,
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_FOUNDED',
 		'YieldType',
 		YieldType
-FROM	vAskiyaUA;
+FROM	vAskiyaUA
+WHERE	Domestic > 0;
 
 INSERT INTO	ModifierArguments (ModifierId, Name, Value)
 SELECT DISTINCT
-		'MODIFIER_CVS_ASKIYA_UA_'||Reference,
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_FOUNDED',
 		'Amount',
 		Domestic
-FROM	vAskiyaUA;
+FROM	vAskiyaUA
+WHERE	Domestic > 0;
 
 INSERT INTO	ModifierArguments (ModifierId, Name, Value)
 SELECT DISTINCT
-		'MODIFIER_CVS_ASKIYA_UA_'||Reference,
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_FOUNDED',
 		'Domestic',
 		1
-FROM	vAskiyaUA;
+FROM	vAskiyaUA
+WHERE	Domestic > 0;
+
+INSERT INTO	ModifierArguments (ModifierId, Name, Value)
+SELECT DISTINCT
+		'MODIFIER_CVS_ASKIYA_UA_ATTACH_'||Reference||'_CONQUERED',
+		'ModifierId',
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_CONQUERED'
+FROM	vAskiyaUA
+WHERE	International > 0;
+
+INSERT INTO	ModifierArguments (ModifierId, Name, Value)
+SELECT DISTINCT
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_CONQUERED',
+		'YieldType',
+		YieldType
+FROM	vAskiyaUA
+WHERE	International > 0;
+
+INSERT INTO	ModifierArguments (ModifierId, Name, Value)
+SELECT DISTINCT
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_CONQUERED',
+		'Amount',
+		International
+FROM	vAskiyaUA
+WHERE	International > 0;
+
+INSERT INTO	ModifierArguments (ModifierId, Name, Value)
+SELECT DISTINCT
+		'MODIFIER_CVS_ASKIYA_UA_'||Reference||'_CONQUERED',
+		'Domestic',
+		1
+FROM	vAskiyaUA
+WHERE	International > 0;
 
 -----------------------------------------------
 -- RequirementSets
@@ -124,7 +193,13 @@ FROM	vAskiyaUA;
 
 INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
 SELECT DISTINCT
-		'REQSET_CVS_ASKIYA_UA_CITY_HAS_'||DistrictType,
+		'REQSET_CVS_ASKIYA_UA_FOUNDED_CITY_HAS_'||DistrictType,
+		'REQUIREMENTSET_TEST_ALL'
+FROM	vAskiyaUA;
+
+INSERT INTO RequirementSets (RequirementSetId, RequirementSetType)
+SELECT DISTINCT
+		'REQSET_CVS_ASKIYA_UA_CONQUERED_CITY_HAS_'||DistrictType,
 		'REQUIREMENTSET_TEST_ALL'
 FROM	vAskiyaUA;
 
@@ -146,14 +221,38 @@ FROM	vAskiyaUA;
 
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 SELECT DISTINCT
-		'REQSET_CVS_ASKIYA_UA_CITY_HAS_'||DistrictType,
+		'REQSET_CVS_ASKIYA_UA_FOUNDED_CITY_HAS_'||DistrictType,
 		'REQUIRES_CITY_FOLLOWS_RELIGION'
 FROM	vAskiyaUA;
 
 INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
 SELECT DISTINCT
-		'REQSET_CVS_ASKIYA_UA_CITY_HAS_'||DistrictType,
+		'REQSET_CVS_ASKIYA_UA_FOUNDED_CITY_HAS_'||DistrictType,
 		'REQ_CVS_ASKIYA_UA_CITY_HAS_'||DistrictType
+FROM	vAskiyaUA;
+
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+SELECT DISTINCT
+		'REQSET_CVS_ASKIYA_UA_FOUNDED_CITY_HAS_'||DistrictType,
+		'REQ_CVS_ASKIYA_UA_CITY_FOUNDED'
+FROM	vAskiyaUA;
+
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+SELECT DISTINCT
+		'REQSET_CVS_ASKIYA_UA_CONQUERED_CITY_HAS_'||DistrictType,
+		'REQUIRES_CITY_FOLLOWS_RELIGION'
+FROM	vAskiyaUA;
+
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+SELECT DISTINCT
+		'REQSET_CVS_ASKIYA_UA_CONQUERED_CITY_HAS_'||DistrictType,
+		'REQ_CVS_ASKIYA_UA_CITY_HAS_'||DistrictType
+FROM	vAskiyaUA;
+
+INSERT INTO RequirementSetRequirements (RequirementSetId, RequirementId)
+SELECT DISTINCT
+		'REQSET_CVS_ASKIYA_UA_CONQUERED_CITY_HAS_'||DistrictType,
+		'REQ_CVS_ASKIYA_UA_CITY_CONQUERED'
 FROM	vAskiyaUA;
 
 -----------------------------------------------
@@ -172,6 +271,11 @@ SELECT DISTINCT
 		'REQUIREMENT_CITY_HAS_DISTRICT'
 FROM	vAskiyaUA;
 
+INSERT INTO Requirements
+		(RequirementId,							RequirementType,						Inverse	)
+VALUES	('REQ_CVS_ASKIYA_UA_CITY_FOUNDED',		'REQUIREMENT_CITY_IS_ORIGINAL_OWNER',	0		),
+		('REQ_CVS_ASKIYA_UA_CITY_CONQUERED',	'REQUIREMENT_CITY_IS_ORIGINAL_OWNER',	1		);
+
 -----------------------------------------------
 -- RequirementArguments
 -----------------------------------------------
@@ -189,3 +293,9 @@ SELECT DISTINCT
 		'DistrictType',
 		DistrictType
 FROM	vAskiyaUA;
+
+-----------------------------------------------
+-- Temporary View
+-----------------------------------------------
+
+DROP VIEW vAskiyaUA;

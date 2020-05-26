@@ -1,13 +1,13 @@
 Starting AssetCooker...
-OPENCL ACCELERATION IS NOT AVAILABLE!  Your cooks will be SLOOOOWWW!  Please inform an engineer.
+Argument '--shaders' has been deprecated and is no longer used.
 XLP cook starting...
-\\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Askiya\XLPs\LeaderFallbacks.xlp
-Opened output file: D:\Documents\my games\Sid Meier's Civilization VI\Mods\Mods\CIVITAS Askiya\Platforms\MacOS\BLPs/LeaderFallbacks.blp    For XLP: '\\WDMYCLOUD\Sam\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Askiya\XLPs\LeaderFallbacks.xlp'
+Z:\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Askiya\XLPs\LeaderFallbacks.xlp
+Opened output file: D:\Documents\My Games\Sid Meier's Civilization VI\Mods\CIVITAS Askiya\Platforms\MacOS\BLPs/LeaderFallbacks.blp    For XLP: 'Z:\Projects\Modding\Civ VI\IdeaProjects\GitHub\CIVITAS-Songhai\CIVITAS Songhai\CIVITAS Askiya\XLPs\LeaderFallbacks.xlp'
 Could not load digest key: ''.  Using mod key to sign BLP.
 Starting 'LeaderFallbacks'
-Load finished for: 'LeaderFallbacks' in 0.004 seconds
+Load finished for: 'LeaderFallbacks' in 1.723 seconds
 Cook finished for: 'LeaderFallbacks' in 0.000 seconds
-Disk write finished for: 'LeaderFallbacks' in 0.065 seconds
-Cleanup finished for: 'LeaderFallbacks' in 0.000 seconds
+Disk write finished for: 'LeaderFallbacks' in 0.185 seconds
+Cleanup finished for: 'LeaderFallbacks' in 0.001 seconds
 XLP cook completed with success.
-Cook completed in 0.107 seconds
+Cook completed in 2.019 seconds

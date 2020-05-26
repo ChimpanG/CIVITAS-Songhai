@@ -18,7 +18,7 @@ VALUES
 
 	("en_US", "LOC_TRAIT_LEADER_CVS_SONNI_ALI_UA_NAME",  	"By Fire And Sword"	),
 	("en_US", "LOC_TRAIT_LEADER_CVS_SONNI_ALI_UA_DESCRIPTION",		
-	"Historic moments provide +1 era score when at war with another civilization. During a [ICON_GLORY_GOLDEN_AGE] Golden Age, military units gain +5 [ICON_STRENGTH] Combat Strength against units of civilizations not in a [ICON_GLORY_GOLDEN_AGE] Golden Age and earn [ICON_SCIENCE] Science equal to 50% of the [ICON_STRENGTH] Combat Strength of defeated units."	),
+	"During a [ICON_GLORY_GOLDEN_AGE] Golden Age, military units gain additional [ICON_STRENGTH] Combat Strength against units of civilizations not in a [ICON_GLORY_GOLDEN_AGE] Golden Age and earn [ICON_SCIENCE] Science equal to 50% of the [ICON_STRENGTH] Combat Strength of defeated units."	),
 
 	("en_US",	"LOC_MODIFIER_CVS_SONNI_ALI_UA_GOLDEN_COMBAT_DESCRIPTION",  "+{1_Amount} Combat from Golden Age"	),
 
@@ -26,7 +26,7 @@ VALUES
 -- Agenda
 -----------------------------------------------	
 
-	("en_US", "LOC_AGENDA_CVS_SONNI_ALI_NAME",			"Siege of Djenné"	),
+	("en_US", "LOC_AGENDA_CVS_SONNI_ALI_NAME",			"Siege of Djenne"	),
 	("en_US", "LOC_AGENDA_CVS_SONNI_ALI_DESCRIPTION", 	"Respects civilizations at war with civilizations other than Songhai. Whilst in a golden age, sees those who are not as targets."	),
 
 	("en_US", "LOC_DIPLO_KUDO_LEADER_CVS_SONNI_ALI_REASON_ANY",		"(You are at war.)"	),

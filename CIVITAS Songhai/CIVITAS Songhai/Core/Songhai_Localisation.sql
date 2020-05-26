@@ -20,13 +20,7 @@ VALUES
 
 	("en_US", "LOC_TRAIT_CIVILIZATION_CVS_SONGHAI_UA_NAME",  	"Chronicle of Africa"	),
 	("en_US", "LOC_TRAIT_CIVILIZATION_CVS_SONGHAI_UA_DESCRIPTION",	
-	"Rivers provide minor adjacency bonuses to specialty districts and double healing to adjacent units. [ICON_TRADEROUTE] Trade Routes yield +1 [ICON_SCIENCE] Science for each [ICON_TRADINGPOST] Trading Post they pass through."	),
-	
-	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_CAMPUS",			"+{1_num} [ICON_SCIENCE] Science from the adjacent {1_Num : plural 1?river; other?river tiles;}."			),
-	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_THEATER",			"+{1_num} [ICON_CULTURE] Culture from the adjacent {1_Num : plural 1?river; other?river tiles;}."			),
-	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_HOLY_SITE",			"+{1_num} [ICON_FAITH] Faith from the adjacent {1_Num : plural 1?river; other?river tiles;}."				),
-	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_COMMERCIAL_HUB",	"+{1_num} [ICON_GOLD] Gold from the adjacent {1_Num : plural 1?river; other?river tiles;}."					),
-	("en_US",	"LOC_MODIFIER_CVS_SONGHAI_UA_RIVER_DISTRICT_INDUSTRIAL_ZONE",	"+{1_num} [ICON_PRODUCTION] Production from the adjacent {1_Num : plural 1?river; other?river tiles;}."		),
+	"[ICON_TRADEROUTE] Trade Routes yield +1 [ICON_SCIENCE] Science for each [ICON_TRADINGPOST] Trading Post they pass through. Rivers provide double [ICON_DAMAGED] Healing to adjacent units. Historic moments provide +1 Era Score when at war with another civilization."	),
 
 -----------------------------------------------
 -- UI
@@ -34,7 +28,7 @@ VALUES
 
 	("en_US", "LOC_BUILDING_CVS_SONGHAI_UI_NAME",		"Jiiray"	),
 	("en_US", "LOC_BUILDING_CVS_SONGHAI_UI_DESCRIPTION",		
-	"A University replacement unique to Songhai. Provides +1 [ICON_GREATWRITER] Great Writer points and +2 Slots for Great Works of [ICON_GREATWORK_WRITING] Writing. Great Works of [ICON_GREATWORK_WRITING] Writing in this city yield +2 [ICON_SCIENCE] Science."	),
+	"A University replacement unique to Songhai. Provides an additional slot for Great Works of [ICON_GREATWORK_WRITING] Writing. Great Works of [ICON_GREATWORK_WRITING] Writing in this city yield +2 [ICON_SCIENCE] Science."	),
 	
 -----------------------------------------------
 -- UU
@@ -42,7 +36,7 @@ VALUES
 
 	("en_US", "LOC_UNIT_CVS_SONGHAI_UU_NAME",		"Bari Koy"	),
 	("en_US", "LOC_UNIT_CVS_SONGHAI_UU_DESCRIPTION",		  
-	"A heavy cavalry unit unique to Songhai. Replaces Knight. Ignores [ICON_MOVEMENT] Movement and [ICON_STRENGTH] Combat Strength penalties across rivers. Deals full damage to city walls."	),
+	"A Light Cavalry unit unique to Songhai. Replaces Courser. Unlocks with Stirrups. Ignores [ICON_MOVEMENT] Movement and [ICON_STRENGTH] Combat Strength penalties across rivers."	),
 
 -----------------------------------------------
 -- Deserts

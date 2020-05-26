@@ -29,7 +29,7 @@
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Mod.Art.xml" />
+    <None Include="CIVITAS Songhai.Art.xml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Core\Songhai_Civilization.sql">

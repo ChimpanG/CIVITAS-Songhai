@@ -18,7 +18,7 @@ VALUES
 
 	("en_US", "LOC_TRAIT_LEADER_CVS_ASKIYA_UA_NAME",  	"Ulama"	),
 	("en_US", "LOC_TRAIT_LEADER_CVS_ASKIYA_UA_DESCRIPTION",		
-	"Conquered cities immediately convert to your founded [ICON_RELIGION] Religion. Districts in cities following your [ICON_RELIGION] Religion provide double yields on domestic [ICON_TRADEROUTE] Trade Routes sent to them."	),
+	"Conquered cities immediately convert to Askiya's [ICON_RELIGION] Religion. Districts in founded cities following Askiya's [ICON_RELIGION] Religion provide +100% yields on domestic [ICON_TRADEROUTE] Trade Routes sent to them, and districts in conquered cities retain their international yields on domestic [ICON_TRADEROUTE] Trade Routes sent to them."	),
 
 -----------------------------------------------
 -- Agenda
